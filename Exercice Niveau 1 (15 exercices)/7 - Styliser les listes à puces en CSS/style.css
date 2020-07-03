@@ -1,0 +1,60 @@
+.list1 li{
+ list-style: none;
+}
+
+.list2 li {
+  list-style: none;
+}
+
+.list3 li{
+  list-style-type: none;
+
+}
+.list1 li::before
+{
+  content:"";
+  width: 0;
+  height: 0;
+  border: 5px solid black;
+  border-top-color: white;
+  border-bottom-color: white;
+  border-right-color: white;
+  border-left-color: black;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.list2 li::before
+{
+  content:"";
+  width: 4px;
+  height: 4px;
+  border: 2px solid blue;
+  transform: rotate(45deg);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  }
+
+ul {
+    counter-reset: compteListe;
+  }
+
+.list3 li::before
+ {
+  counter-increment: compteListe ;
+  content: counter(compteListe) " ";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background:blue;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  font-weight: bold;
+  text-align: center;
+
+
+}

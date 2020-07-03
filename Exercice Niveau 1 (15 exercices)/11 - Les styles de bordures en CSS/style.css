@@ -1,0 +1,38 @@
+body {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-right: 68%;
+  border-radius: 10px;
+  padding-bottom: 25px;
+}
+
+
+
+.titre-article {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.detail-article {
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: 15px;
+  margin-right: 15px;
+  line-height: 150%;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1em;
+}
+
+.detail-article p {
+  text-align: justify;
+  padding-bottom: 15px;
+}
+
+a {
+  color: white;
+  border: 1px solid #8870ff;
+  background-color: #8870ff;
+  text-decoration: none;
+  padding: 9px 10px;
+  border-radius: 200px / 50px;
+}
