@@ -1,12 +1,15 @@
+/*On enleve les bordures du tableau*/
 table {
   border: none;
 }
 
+/*On change la taille et on affiche la premiere lettre de chaque mot en capitale*/
 caption {
   font-size: 1.5em;
   text-transform: capitalize;
 }
 
+/*On ajoute une marge interne et alignement centré sur toute les cellules "th" et "td"*/
 th, td {
   padding: 10px;
   text-align: center;
@@ -16,7 +19,7 @@ th, td {
 qui sont dans thead*/
 thead tr:nth-child(1) th:nth-child(2){
   color: blue;
-  border: 0.2px solid black;
+  border: 0.2px solid black; 
   font-size: 2em;
 }
 
