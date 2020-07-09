@@ -2,7 +2,6 @@ table {
   border: none;
 }
 
-
 caption {
   font-size: 1.5em;
   text-transform: capitalize;
@@ -13,35 +12,51 @@ th, td {
   text-align: center;
 }
 
+/*On cible le premier enfant de "tr" et le deuxieme enfant de "th" 
+qui sont dans thead*/
 thead tr:nth-child(1) th:nth-child(2){
   color: blue;
   border: 0.2px solid black;
   font-size: 2em;
 }
 
+/*On cible toute les cellules paires "tr" du "tbody" pour leur 
+donner une couleur de fond*/
 tbody tr:nth-child(even){
   background-color: #FCB941;
 }
 
+/*On cible toute les cellules impaire "tr" du "tbody" pour leur 
+donner une couleur de fond*/
 tbody tr:nth-child(odd){
-  background-color: #F1654C;
+  background-color: #7c6966;
 }
 
+/*On cible la premiere cellule de chaque ligne impaire du "tbody"
+pour leur donner une couleur de fond et une couleur a la police*/
 tbody tr:nth-child(odd) :first-child {
   background-color: #7E3661;
   color: #fff;
 }
+
+/*On cible la premiere cellule de chaque ligne paire du "tbody"
+pour leur donner une couleur de fond et une couleur a la police*/
 tbody tr:nth-child(even) :first-child {
   background-color: #888888;
   color: #fff;
 }
 
+/*On cible la derniere cellule de chaque ligne impaire  du "tbody"
+pour leur donner une couleur de fond et une couleur a la police*/
 tbody tr:nth-child(odd) :last-child {
   background-color: #8870FF;
   color: #fff;
 }
 
+/*On cible leur dernier enfant de "th" du "thead" pour lui enlever 
+la bordure du haut et de droite*/
 thead th[rowspan="2"]:last-child {
   border-top: none;
   border-right: none;
 }
+
