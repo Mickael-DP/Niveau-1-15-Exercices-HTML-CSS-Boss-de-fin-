@@ -1,0 +1,77 @@
+/*Position, taille et cache de la case a cocher*/
+.btn-checkbox {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0;
+}
+
+/*Style et couleur du label lorsque la case n'est pas cochée*/
+.bouton-non{
+  position: relative;
+  margin: 400px auto;
+  width: 100px;
+  height: 40px;
+  background-color: #ff6a6a;
+  border-radius: 50px;
+  border: 1px solid grey;
+  box-shadow: black;
+}
+
+/*Style et couleur du label lorsque la case est cochée*/
+.bouton-oui  {
+  position: absolute;
+  margin: 0;
+  width: 100px;
+  height: 40px;
+  background-color: #00ec81 ;
+  border-radius: 50px;
+  box-shadow: black;
+  opacity: 0;
+}
+
+/*Style et position de base du bouton*/
+.switch-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px ;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid grey;
+  left: -1px;
+  top:-1px;
+  transition: 0.5s;
+}
+
+/*Lorsqu'on coche la case, le texte "oui" apparait*/
+.btn-checkbox:checked ~ .bouton-oui {
+  opacity: 1;
+}
+
+/*Lorsqu'on coche la case, le bouton bascule vers la droite*/
+.btn-checkbox:checked ~ .switch-btn {
+  left: 60px;
+}
+
+/*Position et couleur du texte "non"*/ 
+.bouton-non > p {
+  color: white;
+  position: absolute;
+  left: 50px;
+  top: -30%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*Position et couleur du texte "oui"*/ 
+.bouton-oui p {
+  color: white;
+  position: absolute;
+  left: 8px;
+  top: -30%;
+  font-size: 20px;
+  font-weight: bold;
+}
